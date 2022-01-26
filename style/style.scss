@@ -1,0 +1,99 @@
+// General Styles
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #EDEDED;
+}
+li{
+    list-style: none;   
+}
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 56px;
+    color: #EDEDED;
+}
+h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 54px;
+    color: #595959;
+}
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 42px;
+    color: #595959;
+}
+h4{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    color: #595959;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: #EDEDED; 
+}
+.container{
+    padding: 0 7%;
+}
+//Header Styles 
+.header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/pexels-picjumbocom-210661\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+        .logo{
+            font-family: 'Racing Sans One', cursive;;
+            letter-spacing: 2px;
+            a{
+                color: #C92164;
+            }
+        }
+        &__nav{
+            display: flex;
+            width: 420px;
+            justify-content: space-between;
+            .menu__item{
+                font-family: 'Open Sans', sans-serif;
+                font-size: 24px;
+                color: #EDEDED;
+                font-weight: 500;
+                position: relative;
+            }
+            .menu__item:hover{
+                border-bottom: 3px solid #C92164;
+                transition: .5s;
+            }
+            .menu__item:not(:last-child)::before{
+                position: absolute;
+                content: "";
+                width: 3px;
+                height: 20px;
+                background: #C92164;
+                right: -20px;
+                top: 8px;
+            }
+        }
+    }
+    .text__banner{
+        height: 85vh;
+        width: 80vw;
+        font-size: 54px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .arrow{
+        display: flex;
+        justify-content: center;
+    }
+}
