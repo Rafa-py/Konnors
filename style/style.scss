@@ -97,3 +97,81 @@ p{
         justify-content: center;
     }
 }
+
+
+//Contact Styles 
+.contact__us{
+    width: 100vw;
+    background: #DCDCDC;
+    height: 400px;
+    h2{
+        font-weight: 400;
+        text-align: center;
+        padding-top: 25px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3% 30% 0 30%;
+
+        h4{
+            font-weight: 400;
+            width: 300px;
+        }
+        button{
+            width: 210px;
+            height: 44px;
+            border-radius: 12px;
+            border: none;
+            background: #363636;
+            color: #EDEDED;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        button:hover{
+            border-bottom: 3px solid #C92164;
+        }
+    }
+}
+
+//Footer Styles
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    background:#363636; 
+    padding: 0 7%;
+
+        h2{
+            font-family: 'Racing Sans One', cursive;;
+            letter-spacing: 2px;
+            a{
+                color: #C92164;
+            }
+        }
+        #codes{
+            font-family: 'Open Sans', sans-serif;
+            color: #D5D5D5;
+            font-weight: 500;
+            font-size: 24px;
+        }
+        #copy{
+            font-family: 'Open Sans', sans-serif;
+            color: #D5D5D5;
+            font-weight: 500;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 3px;
+                margin-top: 2px;
+            }
+        }
+    }
+
+
