@@ -1,178 +1,285 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: #EDEDED;
-}
-
-li {
-  list-style: none;
-}
-
-h1 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 56px;
-  color: #EDEDED;
-}
-
-h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 54px;
-  color: #595959;
-}
-
-h3 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 42px;
-  color: #595959;
-}
-
-h4 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 36px;
-  color: #595959;
-}
-
-p {
-  font-family: "Open Sans", sans-serif;
-  color: #EDEDED;
-}
-
-.container {
-  padding: 0 7%;
-}
-
-.header {
-  height: 100vh;
-  width: 100vw;
-  background-image: url("../img/pexels-picjumbocom-210661 1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.header__top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 25px;
-}
-.header__top .logo {
-  font-family: "Racing Sans One", cursive;
-  letter-spacing: 2px;
-}
-.header__top .logo a {
-  color: #C92164;
-}
-.header__top__nav {
-  display: flex;
-  width: 420px;
-  justify-content: space-between;
-}
-.header__top__nav .menu__item {
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
-  color: #EDEDED;
-  font-weight: 500;
-  position: relative;
-}
-.header__top__nav .menu__item:hover {
-  border-bottom: 3px solid #C92164;
-  transition: 0.5s;
-}
-.header__top__nav .menu__item:not(:last-child)::before {
-  position: absolute;
-  content: "";
-  width: 3px;
-  height: 20px;
-  background: #C92164;
-  right: -20px;
-  top: 8px;
-}
-.header .text__banner {
-  height: 85vh;
-  width: 80vw;
-  font-size: 54px;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header .arrow {
-  display: flex;
-  justify-content: center;
-}
-
-.contact__us {
-  width: 100vw;
-  background: #DCDCDC;
-  height: 400px;
-}
-.contact__us h2 {
-  font-weight: 400;
-  text-align: center;
-  padding-top: 25px;
-}
-.contact__us__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3% 30% 0 30%;
-}
-.contact__us__content h4 {
-  font-weight: 400;
-  width: 300px;
-}
-.contact__us__content button {
-  width: 210px;
-  height: 44px;
-  border-radius: 12px;
-  border: none;
-  background: #363636;
-  color: #EDEDED;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-}
-.contact__us__content button:hover {
-  border-bottom: 3px solid #C92164;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  height: 100px;
-  background: #363636;
-  padding: 0 7%;
-}
-.footer h2 {
-  font-family: "Racing Sans One", cursive;
-  letter-spacing: 2px;
-}
-.footer h2 a {
-  color: #C92164;
-}
-.footer #codes {
-  font-family: "Open Sans", sans-serif;
-  color: #D5D5D5;
-  font-weight: 500;
-  font-size: 24px;
-}
-.footer #copy {
-  font-family: "Open Sans", sans-serif;
-  color: #D5D5D5;
-  font-weight: 500;
-  font-size: 24px;
-  display: flex;
-  align-items: center;
-}
-.footer #copy img {
-  margin-right: 3px;
-  margin-top: 2px;
-}
-
-/*# sourceMappingURL=style.css.map */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #EDEDED;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 56px;
+    color: #EDEDED;
+  }
+  
+  h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 54px;
+    color: #595959;
+  }
+  
+  h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 42px;
+    color: #595959;
+  }
+  
+  h4 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 36px;
+    color: #595959;
+  }
+  
+  p {
+    font-family: "Open Sans", sans-serif;
+    color: #EDEDED;
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/pexels-picjumbocom-210661 1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+  }
+  .header__top .logo {
+    font-family: "Racing Sans One", cursive;
+    letter-spacing: 2px;
+  }
+  .header__top .logo a {
+    color: #C92164;
+  }
+  .header__top .logo:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+  .header__top__nav {
+    display: flex;
+    width: 420px;
+    justify-content: space-between;
+  }
+  .header__top__nav .menu__item {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    color: #EDEDED;
+    font-weight: 500;
+    position: relative;
+  }
+  .header__top__nav .menu__item__link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 0;
+    background: #C92164;
+    transform: translateX(-50%);
+  }
+  .header__top__nav .menu__item__link:hover {
+    opacity: 0.6;
+  }
+  .header__top__nav .menu__item__link:hover::after {
+    width: 100%;
+    transition: 0.3s;
+  }
+  .header__top__nav .menu__item:not(:last-child)::before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 20px;
+    background: #C92164;
+    right: -20px;
+    top: 8px;
+  }
+  .header .text__banner {
+    height: 85vh;
+    width: 80vw;
+    font-size: 54px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header .arrow {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact__us {
+    width: 100vw;
+    background: #DCDCDC;
+    height: 400px;
+  }
+  .contact__us h2 {
+    font-weight: 400;
+    text-align: center;
+    padding-top: 25px;
+  }
+  .contact__us__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 30% 0 30%;
+  }
+  .contact__us__content h4 {
+    font-weight: 400;
+    width: 300px;
+  }
+  .contact__us__content button {
+    width: 210px;
+    height: 44px;
+    border-radius: 12px;
+    border: none;
+    background: #363636;
+    color: #EDEDED;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .contact__us__content button:hover {
+    border-bottom: 3px solid #C92164;
+  }
+  
+  .servicos {
+    background: #E5E5E5;
+    padding: 60px 0;
+    height: 700px;
+  }
+  .servicos h2 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 44px;
+    margin-bottom: 70px;
+  }
+  .servicos .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .servicos .services__item {
+    display: flex;
+    align-items: center;
+    flex-basis: 32%;
+  }
+  .servicos .services__item figure {
+    display: flex;
+    align-items: center;
+    width: 90px;
+    height: 100px;
+    margin-right: 15px;
+  }
+  .servicos .services__item figure img {
+    object-fit: contain;
+    height: 90px;
+  }
+  .servicos .services__item .content h4 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-weight: 400;
+  }
+  .servicos .services__item .content p {
+    color: #595959;
+  }
+  .servicos .services__item:nth-child(-n+3) {
+    margin-bottom: 120px;
+  }
+  
+  .quem-somos {
+    padding: 60px;
+  }
+  .quem-somos h2 {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .quem-somos p {
+    color: #595959;
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+  .quem-somos .socios {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+  }
+  .quem-somos .socios__item {
+    display: flex;
+    align-items: center;
+  }
+  .quem-somos .socios__item figure img {
+    height: 250px;
+    border-radius: 50%;
+  }
+  .quem-somos .socios__item figure:first-child {
+    margin-right: 30px;
+  }
+  .quem-somos .socios__item figure:last-child {
+    order: 3;
+    margin-left: 40px;
+  }
+  .quem-somos .socios__item__content h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .quem-somos .socios__item + .socios__item {
+    justify-content: flex-end;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    background: #363636;
+    padding: 0 7%;
+  }
+  .footer h2 {
+    font-family: "Racing Sans One", cursive;
+    letter-spacing: 2px;
+  }
+  .footer h2 a {
+    color: #C92164;
+  }
+  .footer #codes {
+    font-family: "Open Sans", sans-serif;
+    color: #D5D5D5;
+    font-weight: 500;
+    font-size: 24px;
+  }
+  .footer #copy {
+    font-family: "Open Sans", sans-serif;
+    color: #D5D5D5;
+    font-weight: 500;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+  }
+  .footer #copy img {
+    margin-right: 3px;
+    margin-top: 2px;
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  
