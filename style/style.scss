@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 a{
     text-decoration: none;
     color: #EDEDED;
@@ -107,7 +110,7 @@ p{
     }
     .text__banner{
         height: 85vh;
-        width: 80vw;
+        width: 100%;
         font-size: 54px;
         font-weight: 500;
         display: flex;
@@ -117,44 +120,6 @@ p{
     .arrow{
         display: flex;
         justify-content: center;
-    }
-}
-
-
-//Contact Styles 
-.contact__us{
-    width: 100vw;
-    background: #DCDCDC;
-    height: 400px;
-    h2{
-        font-weight: 400;
-        text-align: center;
-        padding-top: 25px;
-    }
-    &__content{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 3% 30% 0 30%;
-
-        h4{
-            font-weight: 400;
-            width: 300px;
-        }
-        button{
-            width: 210px;
-            height: 44px;
-            border-radius: 12px;
-            border: none;
-            background: #363636;
-            color: #EDEDED;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-            font-size: 18px;
-        }
-        button:hover{
-            border-bottom: 3px solid #C92164;
-        }
     }
 }
  //servicos
@@ -257,6 +222,126 @@ p{
     }
 
 }
+//Contact Styles 
+.contact__us{
+    width: 100vw;
+    background: #DCDCDC;
+    height: 400px;
+    h2{
+        font-weight: 400;
+        text-align: center;
+        padding-top: 25px;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3% 30% 0 30%;
+
+        h4{
+            font-weight: 400;
+            width: 300px;
+        }
+        button{
+            width: 210px;
+            height: 44px;
+            border-radius: 12px;
+            border: none;
+            background: #363636;
+            color: #EDEDED;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        button:hover{
+            border-bottom: 3px solid #C92164;
+        }
+    }
+}
+//Forms Styles
+.transition{
+    position: relative;
+}
+.forms{
+    width: 100vw;
+    background: #DCDCDC;
+    height: 400px;
+    transition: .5s;
+    position: absolute;
+    top: -70px;
+    margin-top: 70px; 
+    h2{
+        font-weight: 400;
+        text-align: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 24px;
+            background: transparent;
+            border: transparent;
+            border-bottom: 3px solid #696969;
+            width: 400px;
+            height: 50px;
+        }
+
+            textarea{
+                font-family: 'Open Sans', sans-serif;
+                font-size: 24px;
+                background: transparent;
+                border: transparent;
+                border-bottom: 3px solid #696969;
+                width: 400px;
+                height: 100px;
+            }
+        
+    }
+    &__buttons{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        button{
+            height: 44px;
+            border-radius: 12px;
+            border: none;
+            background: #363636;
+            color: #EDEDED;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+        }
+        button:hover{
+            border-bottom: 3px solid #C92164;
+        }
+        .whats{
+            width: 160px;
+            margin-right: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center ;
+        }   
+        .send{
+            width: 120px;
+            margin-left: 25px;
+        }
+    }
+}
+.hide{
+    transform: rotateX(90deg);
+    transform-origin:top center;
+    transition: .5s;
+}
+.hide_us{
+    transform: rotateX(90deg);
+    transform-origin:top center;
+    transition: .5s;
+}
+
+
+
 //Footer Styles
 
 .footer{

@@ -22,13 +22,13 @@
                 <nav>
                     <ul class="header__top__nav">
                         <li class="menu__item">
-                            <a href="#" class="menu__item__link">Serviços</a>
+                            <a href="#1" class="menu__item__link">Serviços</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__item__link">Quem Somos</a>
+                            <a href="#2" class="menu__item__link">Quem Somos</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#" class="menu__item__link">Contatos</a>
+                            <a href="#3" class="menu__item__link">Contatos</a>
                         </li>
                     </ul>
                 </nav>
@@ -43,6 +43,7 @@
     </header>
     <section class="servicos">
         <div class="container">
+            <a name="1"></a>
             <h2>Serviços</h2>
             <div class="services">
                 <div class="services__item">
@@ -106,6 +107,7 @@
     </section>
     <section class="quem-somos">
         <div class="container">
+            <a name="2"></a>
             <h2>Quem somos</h2>
             <p>A Konnors é uma empresa focada em criação de Websites modernos e profissionais para negócios. É liderada
                 por três sócios: </p>
@@ -130,24 +132,50 @@
                 </div>
                 <div class="socios__item">
                     <figure>
-                        <img src="/img/unnamed.png" alt="">
+                        <img src="/img/maques 1.png" alt="">
                     </figure>
                     <div class='socios__item__content'>
                         <h3>Gabriel Marques</h3>
-                        <p>UI Designer & Front End Developer</p>
+                        <p>Front End Developer</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="contact__us">
-        <h2>Agende uma conversa!</h2>
-        <div class="contact__us__content">
-            <h4>Será um prazer conversar sobre suas ideias.</h4>
-            <button>AGENDAR REUNIÃO</button>
+    <div class="transition">
+        <div class="forms hide">
+            <div class="container">
+                <a name="4"></a>
+                <h2>Entre em contato:</h2>
+                <form action="/pagina-processa-dados-do-form" method="post">
+                    <div>
+                        <input type="text" id="nome" placeholder="Nome" />
+                    </div>
+                    <div>
+                        <input type="email" id="email" placeholder="E-mail" />
+                    </div>
+                    <div>
+                        <textarea id="msg" placeholder="Mensagem"></textarea>
+                    </div>
+                </form>
+                <div class="forms__buttons">
+                    <button class="whats"><img src="img/whatsapp_black_24dp 1.png" alt="">WHASTSAPP</button>
+                    <button class="send"    >ENVIAR</button>
+                </div>
+            </div>
         </div>
     </div>
-
+        <div class="contact__us">
+            <a name="3"></a>
+            <h2>Agende uma conversa!</h2>
+            <div class="contact__us__content">
+                <h4>Será um prazer conversar sobre suas ideias.</h4>
+                <a href="#4">
+                    <button class="btn">AGENDAR REUNIÃO</button>
+                </a>
+            </div>
+            
+        </div>
     <footer>
         <ul class="footer">
             <li>
@@ -162,7 +190,8 @@
             </li>
         </ul>
     </footer>
-    <script src="scripts/script.js"></script>
+    <script src="scripts/faq.js"></script>
+
 </body>
 
 </html>
