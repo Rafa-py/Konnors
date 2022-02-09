@@ -1,0 +1,36 @@
+//Contact Styles
+.contact__us {
+  width: 100vw;
+  background: #dcdcdc;
+  height: 400px;
+  h2 {
+    font-weight: 400;
+    text-align: center;
+    padding-top: 25px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 30% 0 30%;
+
+    h4 {
+      font-weight: 400;
+      width: 300px;
+    }
+    button {
+      width: 210px;
+      height: 44px;
+      border-radius: 12px;
+      border: none;
+      background: #363636;
+      color: #ededed;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    button:hover {
+      border-bottom: 3px solid #c92164;
+    }
+  }
+}

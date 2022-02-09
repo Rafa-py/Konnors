@@ -1,3 +1,138 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -10,7 +145,7 @@ html {
 
 a {
   text-decoration: none;
-  color: #EDEDED;
+  color: #ededed;
 }
 
 li {
@@ -20,7 +155,7 @@ li {
 h1 {
   font-family: "Open Sans", sans-serif;
   font-size: 56px;
-  color: #EDEDED;
+  color: #ededed;
 }
 
 h2 {
@@ -43,7 +178,7 @@ h4 {
 
 p {
   font-family: "Open Sans", sans-serif;
-  color: #EDEDED;
+  color: #ededed;
 }
 
 .container {
@@ -71,7 +206,7 @@ p {
   letter-spacing: 2px;
 }
 .header__top .logo a {
-  color: #C92164;
+  color: #c92164;
 }
 .header__top .logo:hover {
   opacity: 0.5;
@@ -85,7 +220,7 @@ p {
 .header__top__nav .menu__item {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
-  color: #EDEDED;
+  color: #ededed;
   font-weight: 500;
   position: relative;
 }
@@ -96,7 +231,7 @@ p {
   left: 50%;
   height: 2px;
   width: 0;
-  background: #C92164;
+  background: #c92164;
   transform: translateX(-50%);
 }
 .header__top__nav .menu__item__link:hover {
@@ -111,7 +246,7 @@ p {
   content: "";
   width: 3px;
   height: 20px;
-  background: #C92164;
+  background: #c92164;
   right: -20px;
   top: 8px;
 }
@@ -130,7 +265,7 @@ p {
 }
 
 .servicos {
-  background: #E5E5E5;
+  background: #e5e5e5;
   padding: 60px 0;
   height: 700px;
 }
@@ -215,48 +350,13 @@ p {
   justify-content: flex-end;
 }
 
-.contact__us {
-  width: 100vw;
-  background: #DCDCDC;
-  height: 400px;
-}
-.contact__us h2 {
-  font-weight: 400;
-  text-align: center;
-  padding-top: 25px;
-}
-.contact__us__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3% 30% 0 30%;
-}
-.contact__us__content h4 {
-  font-weight: 400;
-  width: 300px;
-}
-.contact__us__content button {
-  width: 210px;
-  height: 44px;
-  border-radius: 12px;
-  border: none;
-  background: #363636;
-  color: #EDEDED;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-}
-.contact__us__content button:hover {
-  border-bottom: 3px solid #C92164;
-}
-
 .transition {
   position: relative;
 }
 
 .forms {
   width: 100vw;
-  background: #DCDCDC;
+  background: #dcdcdc;
   height: 400px;
   transition: 0.5s;
   position: absolute;
@@ -300,13 +400,13 @@ p {
   border-radius: 12px;
   border: none;
   background: #363636;
-  color: #EDEDED;
+  color: #ededed;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 18px;
 }
 .forms__buttons button:hover {
-  border-bottom: 3px solid #C92164;
+  border-bottom: 3px solid #c92164;
 }
 .forms__buttons .whats {
   width: 160px;
@@ -332,6 +432,41 @@ p {
   transition: 0.5s;
 }
 
+.contact__us {
+  width: 100vw;
+  background: #dcdcdc;
+  height: 400px;
+}
+.contact__us h2 {
+  font-weight: 400;
+  text-align: center;
+  padding-top: 25px;
+}
+.contact__us__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3% 30% 0 30%;
+}
+.contact__us__content h4 {
+  font-weight: 400;
+  width: 300px;
+}
+.contact__us__content button {
+  width: 210px;
+  height: 44px;
+  border-radius: 12px;
+  border: none;
+  background: #363636;
+  color: #ededed;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.contact__us__content button:hover {
+  border-bottom: 3px solid #c92164;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -346,17 +481,17 @@ p {
   letter-spacing: 2px;
 }
 .footer h2 a {
-  color: #C92164;
+  color: #c92164;
 }
 .footer #codes {
   font-family: "Open Sans", sans-serif;
-  color: #D5D5D5;
+  color: #d5d5d5;
   font-weight: 500;
   font-size: 24px;
 }
 .footer #copy {
   font-family: "Open Sans", sans-serif;
-  color: #D5D5D5;
+  color: #d5d5d5;
   font-weight: 500;
   font-size: 24px;
   display: flex;
