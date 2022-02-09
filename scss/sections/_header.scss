@@ -1,0 +1,79 @@
+//Header Styles
+.header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/pexels-picjumbocom-210661\ 1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    .logo {
+      font-family: "Racing Sans One", cursive;
+      letter-spacing: 2px;
+      a {
+        color: #c92164;
+      }
+      &:hover {
+        opacity: 0.5;
+        transition: 0.3s;
+      }
+    }
+    &__nav {
+      display: flex;
+      width: 420px;
+      justify-content: space-between;
+      .menu__item {
+        font-family: "Open Sans", sans-serif;
+        font-size: 24px;
+        color: #ededed;
+        font-weight: 500;
+        position: relative;
+        &__link {
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            height: 2px;
+            width: 0;
+            background: #c92164;
+            transform: translateX(-50%);
+          }
+          &:hover {
+            opacity: 0.6;
+            &::after {
+              width: 100%;
+              transition: 0.3s;
+            }
+          }
+        }
+      }
+      .menu__item:not(:last-child)::before {
+        position: absolute;
+        content: "";
+        width: 3px;
+        height: 20px;
+        background: #c92164;
+        right: -20px;
+        top: 8px;
+      }
+    }
+  }
+  .text__banner {
+    height: 85vh;
+    width: 100%;
+    font-size: 54px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrow {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,45 @@
+.aboutUs {
+  padding: 60px;
+  h2 {
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  p {
+    color: #595959;
+    margin-bottom: 40px;
+    font-size: 24px;
+  }
+
+  .member {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    &__item {
+      display: flex;
+      align-items: center;
+      figure {
+        img {
+          height: 250px;
+          border-radius: 50%;
+        }
+        &:first-child {
+          margin-right: 30px;
+        }
+        &:last-child {
+          order: 3;
+          margin-left: 40px;
+        }
+      }
+      &__content {
+        h3 {
+          font-weight: 400;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .middle {
+      justify-content: flex-end;
+    }
+  }
+}

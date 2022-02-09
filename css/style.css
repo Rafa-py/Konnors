@@ -187,6 +187,18 @@ p {
   margin: 0 auto;
 }
 
+.hide {
+  transform: rotateX(90deg);
+  transform-origin: top center;
+  transition: 0.5s;
+}
+
+.hide_us {
+  transform: rotateX(90deg);
+  transform-origin: top center;
+  transition: 0.5s;
+}
+
 .header {
   height: 100vh;
   width: 100vw;
@@ -309,44 +321,44 @@ p {
   margin-bottom: 120px;
 }
 
-.quem-somos {
+.aboutUs {
   padding: 60px;
 }
-.quem-somos h2 {
+.aboutUs h2 {
   font-weight: 400;
   text-align: center;
   margin-bottom: 30px;
 }
-.quem-somos p {
+.aboutUs p {
   color: #595959;
   margin-bottom: 40px;
   font-size: 24px;
 }
-.quem-somos .socios {
+.aboutUs .member {
   display: flex;
   flex-direction: column;
   padding: 50px 0;
 }
-.quem-somos .socios__item {
+.aboutUs .member__item {
   display: flex;
   align-items: center;
 }
-.quem-somos .socios__item figure img {
+.aboutUs .member__item figure img {
   height: 250px;
   border-radius: 50%;
 }
-.quem-somos .socios__item figure:first-child {
+.aboutUs .member__item figure:first-child {
   margin-right: 30px;
 }
-.quem-somos .socios__item figure:last-child {
+.aboutUs .member__item figure:last-child {
   order: 3;
   margin-left: 40px;
 }
-.quem-somos .socios__item__content h3 {
+.aboutUs .member__item__content h3 {
   font-weight: 400;
   margin-bottom: 20px;
 }
-.quem-somos .socios .middle {
+.aboutUs .member .middle {
   justify-content: flex-end;
 }
 
@@ -418,18 +430,6 @@ p {
 .forms__buttons .send {
   width: 120px;
   margin-left: 25px;
-}
-
-.hide {
-  transform: rotateX(90deg);
-  transform-origin: top center;
-  transition: 0.5s;
-}
-
-.hide_us {
-  transform: rotateX(90deg);
-  transform-origin: top center;
-  transition: 0.5s;
 }
 
 .contact__us {
