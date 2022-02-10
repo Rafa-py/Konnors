@@ -1,5 +1,5 @@
 header {
-  background: linear-gradient(63.18deg, #0b1e26 0%, #1b323c 100%);
+  background: $bg-header;
   padding-top: 15px;
   padding-bottom: 15px;
   .header {
@@ -9,6 +9,12 @@ header {
     .logo {
       a {
         text-decoration: none;
+        font-family: "Racing Sans One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 60px;
+        color: $text-header-link;
         //@include tamanho-font(30);
       }
     }
@@ -69,7 +75,7 @@ header {
           }
           a {
             text-decoration: none;
-            color: red;
+            color: $text-header-1;
             //@include tamanho-font(16px);
           }
           @media (min-width: 320px) and (max-width: 770px) {
