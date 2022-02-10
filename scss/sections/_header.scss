@@ -9,7 +9,7 @@ header {
     .logo {
       a {
         text-decoration: none;
-        @include tamanho-font(30);
+        //@include tamanho-font(30);
       }
     }
     .nav {
@@ -70,7 +70,7 @@ header {
           a {
             text-decoration: none;
             color: red;
-            @include tamanho-font(16px);
+            //@include tamanho-font(16px);
           }
           @media (min-width: 320px) and (max-width: 770px) {
             padding: 1rem;
