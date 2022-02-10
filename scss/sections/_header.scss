@@ -62,17 +62,6 @@ header {
         display: flex;
         li {
           padding-right: 15px;
-          .btn-header {
-            border-radius: 6px;
-            padding: 15px;
-            background: red;
-            color: blue;
-            @media (min-width: 320px) and (max-width: 770px) {
-              padding: 5px;
-              display: block;
-              text-align: center;
-            }
-          }
           a {
             text-decoration: none;
             color: $text-header;
@@ -80,16 +69,16 @@ header {
           }
           @media (min-width: 320px) and (max-width: 770px) {
             padding: 1rem;
-            border-bottom: 2px solid red;
+            border-bottom: 2px solid $text-header-link;
           }
         }
-        @media (min-width: 320px) and (max-width: 770px) {
+        @media (max-width: 770px) {
           display: block;
           position: absolute;
           width: 30%;
           top: 70px;
           right: 0px;
-          background: black;
+          background: $bg-header;
           height: 0;
           transition: 0.6s;
           z-index: 1000;
