@@ -1,0 +1,28 @@
+.banner {
+  padding-top: $top-section;
+  background: url(../../img/bg_section1.png) no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+  &__content {
+    display: flex;
+    &__text {
+      h1 {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 54px;
+        line-height: 81px;
+        color: $text-banner;
+      }
+      p {
+        font-family: "Poppins", sans-serif;
+        color: $text-banner;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 45px;
+      }
+    }
+  }
+}

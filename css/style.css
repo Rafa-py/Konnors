@@ -11919,19 +11919,6 @@ table {
   border-spacing: 0;
 }
 
-/* 
-// Fontes
-$font-1: "Poppins", sans-serif;
-
-// Espaçamento
-$top: 25px;
-$bottom: 25px;
-$gap: 25px;
-
-$top-section: 290px;
-$top-section-two: 83px;
-$top-footer: 100px;
-$right-footer: 40px; */
 header {
   background: linear-gradient(63.18deg, #0b1e26 0%, #1b323c 100%);
   padding-top: 15px;
@@ -12041,6 +12028,33 @@ header .header .nav .menu li a {
   height: calc(100vh - 70px);
   visibility: visible;
   overflow: auto;
+}
+
+.banner {
+  padding-top: 290px;
+  background: url(../../img/bg_section1.png) no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+}
+.banner__content {
+  display: flex;
+}
+.banner__content__text h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 81px;
+  color: #ffffff;
+}
+.banner__content__text p {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
 }
 
 /*# sourceMappingURL=style.css.map */
