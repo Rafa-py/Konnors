@@ -12008,7 +12008,7 @@ header .header .nav .menu li a {
     border-bottom: 2px solid #ffc035;
   }
 }
-@media (max-width: 770px) {
+@media (min-width: 150px) and (max-width: 770px) {
   header .header .nav .menu {
     display: block;
     position: absolute;
