@@ -75,7 +75,7 @@ header {
           }
           a {
             text-decoration: none;
-            color: $text-header-1;
+            color: $text-header;
             //@include tamanho-font(16px);
           }
           @media (min-width: 320px) and (max-width: 770px) {
