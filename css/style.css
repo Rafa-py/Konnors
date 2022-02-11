@@ -502,4 +502,71 @@ p {
   margin-top: 2px;
 }
 
+@media (max-width: 900px) {
+  .header__top__nav {
+    display: none;
+  }
+
+  .toggle {
+    position: relative;
+    width: 15px;
+    height: 3px;
+    background: white;
+    transition: 0.5s;
+  }
+
+  .toggle::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 3px;
+    top: 8px;
+    background: white;
+    transition: 0.5s;
+  }
+
+  .toggle::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 3px;
+    bottom: 8px;
+    background: white;
+    transition: 0.5s;
+  }
+
+  .menu-mobile {
+    margin-right: 50px;
+  }
+
+  .active .toggle {
+    position: relative;
+    width: 20px;
+    height: 3px;
+    background: white;
+    transform: rotate(45deg);
+    transition: 0.5s;
+  }
+  .active .toggle::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 3px;
+    top: 0;
+    background: white;
+    transform: rotate(90deg);
+    transition: 0.5s;
+  }
+  .active .toggle::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 3px;
+    bottom: 0;
+    background: white;
+    transform: rotate(90deg);
+    transition: 0.5s;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
