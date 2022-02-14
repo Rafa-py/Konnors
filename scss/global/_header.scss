@@ -2,6 +2,9 @@
 a:hover{
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 .header{
     padding-top: 50px;
     width: 100vw;
