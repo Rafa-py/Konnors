@@ -1,14 +1,8 @@
-// Base
-@import "base/reset";
-@import "base/variables";
-
-// Global
-@import "global/general";
-
-// Sections
-@import "sections/header";
-@import "sections/services";
-@import "sections/aboutUs";
-@import "sections/forms";
-@import "sections/contact";
-@import "sections/footer";
+@import 'framework/bootstrap.scss';
+@import 'base/_reset';
+@import 'base/_variables';
+@import 'global/_header';
+@import 'global/_footer';
+@import 'sections/_services';
+@import 'sections/_partners';
+@import 'sections/_form'

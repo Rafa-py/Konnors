@@ -1,0 +1,81 @@
+@import '../base/variables';
+
+.partners{
+    padding: 50px 0 60px 0;
+    background: $bg-section;
+    .composition{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &_title{
+        font-family: $text-font;
+        font-weight: 500;
+        font-size: 54px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        color: $font-color;
+        text-align: center;
+    }
+    &_text{
+        font-family: $text-font;
+        font-weight: 300;
+        font-size: 14px;
+        color: $font-color;
+        margin: 5px 0 50px 15px;
+    }
+    &_box{
+        display: flex;
+        width: 400px;
+        margin: 0 40% 0 0;
+        .office{
+            margin-left: 20px;
+            height: 100%;
+            padding-top: 4%;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        h2{
+            font-family: $text-font;
+            font-weight: 400;
+            font-size: 20px;
+            color: $font-color;
+            margin: 5px 0 0 15px;
+        }
+        p{
+            font-family: $text-font;
+            font-weight: 300;
+            font-size: 14px;
+            color: $font-color;
+            margin: 5px 0 0 15px;
+        }
+    }
+    .middle{
+        display: flex;
+        margin: 0 0 0 40%;
+    }
+
+    @media (max-width: 580px){
+        .partners_box{
+            margin: 0 10% 5% 0;
+        }
+        .middle{
+            display: flex;
+            padding-right: 15px;
+            margin: 0 0 5% 0;
+        } 
+        img{
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .partners{
+        padding: 2px 0 60px 0;
+    }
+}

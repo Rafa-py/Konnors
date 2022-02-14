@@ -1,104 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="/img/Logo.png">
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Racing+Sans+One&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,300;1,400&family=Racing+Sans+One&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/img/Logo.png">
     <title>Konnors</title>
 </head>
 
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__top">
-                <h2 class="logo"><a href="index.html">Konnors</a></h2>
-                <nav>
-                    <ul class="header__top__nav">
-                        <li class="menu__item">
-                            <a href="#1" class="menu__item__link">Serviços</a>
+            <div class="row">
+                <h1 class="logo"><a href="index.html">Konnors</a>
+                </h1>
+                <div class="menu-toggle">
+                    <div class="toggle"></div>
+                </div>
+                <nav class="menu">
+                    <ul class="menu_list">
+                        <li class="menu_list_item">
+                            <a href="#1" class="menu_list_item_link">Serviços</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="#2" class="menu__item__link">Quem Somos</a>
+                        <li class="menu_list_item">
+                            <a href="#2" class="menu_list_item_link">Quem Somos</a>
                         </li>
-                        <li class="menu__item">
-                            <a href="#3" class="menu__item__link">Contatos</a>
+                        <li class="menu_list_item">
+                            <a href="#3" class="menu_list_item_link">Contatos</a>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <div class="text__banner">
+            <div class="text-banner">
+                <div></div>
                 <p>Tiramos a sua ideia do papel</p>
-            </div>
-            <div class="arrow">
-                <img src="img/Arrow.png" alt="Arrow">
+                <img src="img/Arrow.png" alt="">
             </div>
         </div>
     </header>
-    <section class="servicos">
+    <section class="services">
         <div class="container">
-            <a name="1"></a>
-            <h2>Serviços</h2>
-            <div class="services">
-                <div class="services__item">
-                    <figure>
-                        <img src="/img/Icone box.png" alt="">
-                    </figure>
-                    <div class="content">
-                        <h4>Criação de Sites</h4>
+            <a id="1"></a>
+            <h1 class="title">Serviços</h1>
+            <div class="row">
+                <div class="services_box">
+                    <img class="img-services" src="img/Icone box.png" alt="">
+                    <div class="services_box_content">
+                        <h2>Criação de Sites</h2>
                         <p>Conteúdo 100% gerenciável </p>
                     </div>
                 </div>
-                <div class="services__item">
-                    <figure>
-                        <img src="/img//Icone-design.png" alt="">
-                    </figure>
-                    <div class="content">
-                        <h4>UI Design</h4>
-                        <p>Desketp e mobile. <br>100% responsivo</p>
+                <div class="services_box">
+                    <img class="img-services" src="img/Icone-E-Commerce.png" alt="">
+                    <div class="services_box_content">
+                        <h2>UI Design</h2>
+                        <p>Desketp e mobile.
+                            100% responsivo</p>
                     </div>
                 </div>
-                <div class="services__item">
-                    <figure>
-                        <img src="/img/Icone-E-Commerce.png" alt="">
-                    </figure>
-                    <div class="content">
-                        <h4>E-Commerce</h4>
+                <div class="services_box">
+                    <img class="img-services" src="img/landing.png" alt="">
+                    <div class="services_box_content">
+                        <h2>E-Commerce</h2>
                         <p>Produtos gerenciáveis com
                             Woocommerce</p>
                     </div>
                 </div>
-                <div class="services__item">
-                    <figure>
-                        <img src="/img/landing.png" alt="">
-                    </figure>
-                    <div class="content">
-                        <h4>Landing Page</h4>
+                <div class="services_box">
+                    <img class="img-services" src="img/Icone-design.png" alt="">
+                    <div class="services_box_content">
+                        <h2>Landing Page</h2>
                         <p>Conversão em Leads</p>
                     </div>
                 </div>
-                <div class="services__item">
-                    <figure>
-                        <img src="/img/gestao.png" alt="">
-                    </figure>
-                    <div class="content">
-                        <h4>Gestão de Conteúdo</h4>
+                <div class="services_box">
+                    <img class="img-services" src="img/gestao.png" alt="">
+                    <div class="services_box_content">
+                        <h2>Gestão de Conteúdo</h2>
                         <p>Sites gerenciáveis com Wordpress</p>
                     </div>
                 </div>
-                <div class="services__item">
-                    <figure>
-                        <img src="/img/Icone-SEO.png" alt="">
-                    </figure>
-                    <div class="content">
-                        <h4>SEO</h4>
+                <div class="services_box">
+                    <img class="img-services" src="img/Icone-SEO.png" alt="">
+                    <div class="services_box_content">
+                        <h2>SEO</h2>
                         <p>Melhor rankeamento
                             em buscas</p>
                     </div>
@@ -106,93 +98,74 @@
             </div>
         </div>
     </section>
-    <section class="aboutUs">
+    <section class="partners">
         <div class="container">
-            <a name="2"></a>
-            <h2>Quem somos</h2>
-            <p>A Konnors é uma empresa focada em criação de Websites modernos e profissionais para negócios. É liderada
-                por três sócios: </p>
-            <div class="member">
-                <div class="member__item">
-                    <figure>
-                        <img src="/img/rafa.png" alt="">
-                    </figure>
-                    <div class='member__item__content'>
-                        <h3>Rafael S. Pinto</h3>
-                        <p>UI Designer & Front End Developer</p>
+            <div class="composition">
+                <a id="2"></a>
+                <h2 class="partners_title">Quem somos</h2>
+                <p class="partners_text">A Konnors é uma empresa focada em criação de Websites modernos e profissionais
+                    para negócios. É liderada por dois sócios:</p>
+                <div class="partners_box">
+                    <img src="img/rafa.png" alt="">
+                    <div class="office">
+                        <h2>Rafael S. Pinto</h2>
+                        <p>UI Designer <br>&<br> Front End Developer</p>
                     </div>
                 </div>
-                <div class="member__item middle">
-                    <div class='member__item__content'>
-                        <h3>Matheus Felix</h3>
+                <div class="partners_box middle">
+                    <div class="office">
+                        <h2>Gabriel Marques</h2>
                         <p>Front End Developer</p>
                     </div>
-                    <figure>
-                        <img src="/img/math.png" alt="">
-                    </figure>
+                    <img src="img/maques 1.png" alt="">
                 </div>
-                <div class="member__item">
-                    <figure>
-                        <img src="/img/maques 1.png" alt="">
-                    </figure>
-                    <div class='member__item__content'>
-                        <h3>Gabriel Marques</h3>
+                <div class="partners_box">
+                    <img src="img/math.png" alt="">
+                    <div class="office">
+                        <h2>Matheus Felix</h2>
                         <p>Front End Developer</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="transition">
-        <div class="forms hide">
-            <div class="container">
-                <a name="4"></a>
-                <h2>Entre em contato:</h2>
-                <form action="/pagina-processa-dados-do-form" method="post">
-                    <div>
-                        <input type="text" id="nome" placeholder="Nome" />
-                    </div>
-                    <div>
-                        <input type="email" id="email" placeholder="E-mail" />
-                    </div>
-                    <div>
-                        <textarea id="msg" placeholder="Mensagem"></textarea>
-                    </div>
-                </form>
-                <div class="forms__buttons">
-                    <button class="whats"><img src="img/whatsapp_black_24dp 1.png" alt="">WHASTSAPP</button>
-                    <button class="send"    >ENVIAR</button>
+    <div class="form">
+        <div class="container">
+            <a id="3"></a>
+            <h2 class="form_title">
+                Agende uma conversa!
+            </h2>
+            <form class="form_box" action="#" method="POST">
+                <div class="form_container">
+                    <input class="form_input" type="text" name="name" placeholder="NOME">
                 </div>
-            </div>
+                <div class="form_container">
+                    <input class="form_input" type="text" name="email" placeholder="EMAIL">
+                </div>
+                <div class="form_container">
+                    <textarea class="form_txt" name="Msg" id="msg" placeholder="MENSAGEM">
+                    </textarea>
+                </div>
+                <div class="form_container">
+                    <button class="btn">ENVIAR</button>
+                </div>
+            </form>
         </div>
     </div>
-        <div class="contact__us">
-            <a name="3"></a>
-            <h2>Agende uma conversa!</h2>
-            <div class="contact__us__content">
-                <h4>Será um prazer conversar sobre suas ideias.</h4>
-                <a href="#4">
-                    <button class="btn">AGENDAR REUNIÃO</button>
-                </a>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <h1 class="logo"><a href="index.html">Konnors</a>
+                </h1>
+                <p class="police">Política de Privacidade & Código de Conduta</p>
+                <ul class="copy_list">
+                    <li><img src="img/copyright_black_24dp 1.png" alt="Copy"></li>
+                    <li>Copyright</li>
+                </ul>
             </div>
-            
         </div>
-    <footer>
-        <ul class="footer">
-            <li>
-                <h2><a href="index.html">Konnors</a></h2>
-            </li>
-            <li id="codes">
-                Política de Privacidade & Código de Conduta
-            </li>
-            <li id="copy">
-                <img src="img/copyright_black_24dp 1.png" alt="">
-                <p>Copyright</p>
-            </li>
-        </ul>
     </footer>
-    <script src="scripts/faq.js"></script>
-
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
