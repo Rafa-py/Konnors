@@ -1,8 +1,8 @@
-@import 'global/global.scss';
 @import 'framework/bootstrap.scss';
 @import 'base/_reset';
 @import 'base/_variables';
-@import 'header/_header';
+@import 'global/_header';
+@import 'global/_footer';
 @import 'sections/_services';
 @import 'sections/_partners';
 @import 'sections/_form'
