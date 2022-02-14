@@ -6,6 +6,7 @@
         flex-wrap: wrap;
         width: 100%;
         justify-content: center;
+        align-items: center;
     }
     .title{
         font-family: $text-font;
@@ -123,7 +124,6 @@
 }
 @media(max-width: 770px){
     .services_box{
-        margin-bottom: 5    0px;
         &:nth-child(2n+1)::after{
             position: absolute;
             content: "";
@@ -133,4 +133,9 @@
             background: transparent;
         }
     }   
+}
+@media(max-width: 400px){
+    .services_box{
+        margin-left: 30px;
+    }
 }

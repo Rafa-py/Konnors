@@ -9959,9 +9959,11 @@ a:hover {
 
 .footer {
   width: 100%;
-  height: 165px;
+  height: 140px;
   background: #363636;
   padding-top: 30px;
+  position: absolute;
+  bottom: end;
 }
 .footer .row {
   justify-content: space-between;
@@ -9995,27 +9997,27 @@ a:hover {
 }
 
 @media (max-width: 900px) {
-  .row {
+  .footer {
+    height: 170px;
+  }
+  .footer .row {
     flex-direction: column;
   }
-
-  h1 {
+  .footer h1 {
     margin-bottom: 10px;
   }
-
-  .police {
+  .footer .police {
     font-size: 12px;
     margin-bottom: 10px;
   }
-
-  .copy_list {
+  .footer .copy_list {
     display: flex;
     align-items: center;
     width: 40px;
     justify-content: space-between;
     margin-bottom: 10px;
   }
-  .copy_list li {
+  .footer .copy_list li {
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: 8px;
@@ -10030,6 +10032,7 @@ a:hover {
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
+  align-items: center;
 }
 .services .title {
   font-family: "Poppins", sans-serif;
@@ -10141,9 +10144,6 @@ a:hover {
   }
 }
 @media (max-width: 770px) {
-  .services_box {
-    margin-bottom: 5 0px;
-  }
   .services_box:nth-child(2n+1)::after {
     position: absolute;
     content: "";
@@ -10151,6 +10151,11 @@ a:hover {
     height: 75px;
     right: -10%;
     background: transparent;
+  }
+}
+@media (max-width: 400px) {
+  .services_box {
+    margin-left: 30px;
   }
 }
 .partners {
@@ -10220,8 +10225,18 @@ a:hover {
     padding-right: 15px;
     margin: 0 0 5% 0;
   }
+  .partners img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+  }
 }
 
+@media (max-width: 1000px) {
+  .partners {
+    padding: 2px 0 60px 0;
+  }
+}
 .form {
   width: 100%;
   height: 650px;
@@ -10302,6 +10317,20 @@ a:hover {
 }
 .form .form_box .form_container .btn:hover {
   border: 2px solid #C92164;
+}
+@media (max-width: 500px) {
+  .form .form_box {
+    width: 90%;
+    height: 400px;
+  }
+  .form .form_box .form_container .form_input {
+    width: 80%;
+    height: 50px;
+  }
+  .form .form_box .form_container .form_txt {
+    width: 80%;
+    height: 120px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
