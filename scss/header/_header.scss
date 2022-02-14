@@ -1,4 +1,4 @@
-@import '../base/variables';
+@import '../base/_variables';
 a:hover{
     text-decoration: none;
 }
@@ -79,7 +79,7 @@ a:hover{
             font-family: $text-font;
             color: white;
             font-weight: 400;
-            font-size: 54px;
+            font-size: $title-size;
         }
     }
     @media (max-width: 1190px){
