@@ -1,171 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,300;1,400&family=Racing+Sans+One&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="/img/Logo.png">
-    <title>Konnors</title>
-</head>
 
-<body>
+    <!-- links-->
+
+        <!-- bootstrap-->
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+
+        <!-- jqueryui css-->
+        <link rel="stylesheet" href="frameworks/jquery/jquery-ui.min.css">
+
+        <!-- animeOnScroll-->
+        <link rel="stylesheet" href="frameworks/animeOnScroll/aos.css">
+
+        <!-- base css-->
+        <link rel="stylesheet" href="css/style.css">
+
+    <!-- links end-->
+
+    <title>Document</title>
+</head>
+<body class="theme--pink">
     <header class="header">
+        <div class="themeButton" style="display: none;"></div>
         <div class="container">
-            <div class="row">
-                <h1 class="logo"><a href="index.html">Konnors | Teste</a>
-                </h1>
-                <div class="menu-toggle">
-                    <div class="toggle"></div>
-                </div>
-                <nav class="menu">
-                    <ul class="menu_list">
-                        <li class="menu_list_item">
-                            <a href="#1" class="menu_list_item_link">Serviços</a>
-                        </li>
-                        <li class="menu_list_item">
-                            <a href="#2" class="menu_list_item_link">Quem Somos</a>
-                        </li>
-                        <li class="menu_list_item">
-                            <a href="#3" class="menu_list_item_link">Contatos</a>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="logo">
+                <h1 class="logo">Konnors</h1>
             </div>
-            <div class="text-banner">
-                <div></div>
-                <p>Tiramos a sua ideia do papel</p>
-                <img src="img/Arrow.png" alt="">
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__item__link">Serviços</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__item__link">Templates</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__item__link button">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobileButton">
+                <div class="mobileButton__item"></div>
             </div>
         </div>
     </header>
-    <section class="services">
-        <div class="container">
-            <a id="1"></a>
-            <h1 class="title">Serviços</h1>
-            <div class="row">
-                <div class="services_box">
-                    <img class="img-services" src="img/Icone box.png" alt="">
-                    <div class="services_box_content">
-                        <h2>Criação de Sites</h2>
-                        <p>Conteúdo 100% gerenciável </p>
-                    </div>
-                </div>
-                <div class="services_box">
-                    <img class="img-services" src="img/Icone-E-Commerce.png" alt="">
-                    <div class="services_box_content">
-                        <h2>UI Design</h2>
-                        <p>Desketp e mobile.
-                            100% responsivo</p>
-                    </div>
-                </div>
-                <div class="services_box">
-                    <img class="img-services" src="img/landing.png" alt="">
-                    <div class="services_box_content">
-                        <h2>E-Commerce</h2>
-                        <p>Produtos gerenciáveis com
-                            Woocommerce</p>
-                    </div>
-                </div>
-                <div class="services_box">
-                    <img class="img-services" src="img/Icone-design.png" alt="">
-                    <div class="services_box_content">
-                        <h2>Landing Page</h2>
-                        <p>Conversão em Leads</p>
-                    </div>
-                </div>
-                <div class="services_box">
-                    <img class="img-services" src="img/gestao.png" alt="">
-                    <div class="services_box_content">
-                        <h2>Gestão de Conteúdo</h2>
-                        <p>Sites gerenciáveis com Wordpress</p>
-                    </div>
-                </div>
-                <div class="services_box">
-                    <img class="img-services" src="img/Icone-SEO.png" alt="">
-                    <div class="services_box_content">
-                        <h2>SEO</h2>
-                        <p>Melhor rankeamento
-                            em buscas</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="partners">
-        <div class="container">
-            <div class="composition">
-                <a id="2"></a>
-                <h2 class="partners_title">Quem somos</h2>
-                <p class="partners_text">A Konnors é uma empresa focada em criação de Websites modernos e profissionais
-                    para negócios. É liderada por três sócios:</p>
-                <div class="partners_box">
-                    <img src="img/rafa.png" alt="">
-                    <div class="office">
-                        <h2>Rafael S. Pinto</h2>
-                        <p>UI Designer <br>&<br> Front End Developer</p>
-                    </div>
-                </div>
-                <div class="partners_box middle">
-                    <div class="office">
-                        <h2>Gabriel Marques</h2>
-                        <p>Front End Developer</p>
-                    </div>
-                    <img src="img/maques 1.png" alt="">
-                </div>
-                <div class="partners_box">
-                    <img src="img/math.png" alt="">
-                    <div class="office">
-                        <h2>Matheus Felix</h2>
-                        <p>Front End Developer</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="form">
-        <div class="container">
-            <a id="3"></a>
-            <h2 class="form_title">
-                Agende uma conversa!
-            </h2>
-            <form class="form_box" action="#" method="POST">
-                <div class="form_container">
-                    <input class="form_input" type="text" name="name" placeholder="NOME">
-                </div>
-                <div class="form_container">
-                    <input class="form_input" type="text" name="email" placeholder="EMAIL">
-                </div>
-                <div class="form_container">
-                    <textarea class="form_txt" name="Msg" id="msg" placeholder="MENSAGEM">
-                    </textarea>
-                </div>
-                <div class="form_container">
-                    <button class="btn">ENVIAR</button>
-                </div>
-            </form>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <h1 class="logo"><a href="index.html">Konnors</a>
-                </h1>
-                <p class="police">Política de Privacidade & Código de Conduta</p>
-                <ul class="copy_list">
-                    <li><img src="img/copyright_black_24dp 1.png" alt="Copy"></li>
-                    <li>Copyright</li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="scripts/main.js"></script>
-</body>
 
+    <main>
+        <section class="banner">
+            <figure class="banner__image" style="background-image:url(images/Banner.jpg)"></figure>
+            <figcaption class="banner__content">
+                <div class="container">
+                    <h2 class="banner__content__title">
+                        Tiramos a sua ideia do papel. <br>
+                        <span>Do design ao site no ar.</span>
+                    </h2>
+                    <a href="#" class="banner__content__button">Nossos Templates</a>
+                </div>
+            </figcaption>
+        </section>
+
+        <section class="technologys">
+            <div class="container">
+                <h2 class="technologys__title">Tecnologias</h2>
+                <div class="technologys__slide slide" data-aos="fade-right" data-aos-duration="800">
+                    <div class="slide__item">
+                        <div class="slide__item__content">
+                            <h6>Estilização</h6>
+                            <figure class="slide__figure">
+                                <img class="slide__figure__image" src="images/logo-css-3-2048.png" alt="" srcset="">
+                            </figure>
+                            <h3>CSS</h3>
+                        </div>
+                    </div>
+                    <div class="slide__item">
+                        <div class="slide__item__content">
+                            <h6>Estrutura</h6>
+                            <figure class="slide__figure">
+                                <img class="slide__figure__image" src="images/html5-logo-8.png" alt="" srcset="">
+                            </figure>
+                            <h3>HTML</h3>
+                        </div>
+                    </div>
+                    <div class="slide__item">
+                        <div class="slide__item__content">
+                            <h6>Interatividade</h6>
+                            <figure class="slide__figure">
+                                <img class="slide__figure__image" src="images/logo-javascript-png-html-code-allows-to-embed-javascript-logo-in-your-website-587.png" alt="" srcset="">
+                            </figure>
+                            <h3>Javascript</h3>
+                        </div>
+                    </div>
+                    <div class="slide__item">
+                        <div class="slide__item__content">
+                            <h6>Gerenciamento de Conteúdo.</h6>
+                            <figure class="slide__figure">
+                                <img class="slide__figure__image" src="images/wordpress-logo.png" alt="" srcset="">
+                            </figure>
+                            <h3>Wordpress</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Serviços</h2>
+                <div class="services__flex d-flex" data-aos="fade-down" data-aos-duration="800">
+                    <div class="services__flex__content d-flex align-items-center">
+                        <figure class="d-flex align-items-center">
+                            <img class="icon" src="images/sites.png" alt="">
+                        </figure>
+                        <div class="d-block">
+                            <h3>Criação de Sites</h3>
+                            <span>Conteúdo 100% gerenciável</span>
+                        </div>
+                    </div>
+                    <div class="services__flex__content d-flex align-items-center">
+                        <figure>
+                            <img class="icon" src="images/sites.png" alt="">
+                        </figure>
+                        <div class="d-block">
+                            <h3>Criação de Sites</h3>
+                            <span>Conteúdo 100% gerenciável</span>
+                        </div>
+                    </div>
+                    <div class="services__flex__content d-flex align-items-center ">
+                        <figure>
+                            <img class="icon" src="images/sites.png" alt="">
+                        </figure>
+                        <div class="d-block">
+                            <h3>Criação de Sites</h3>
+                            <span>Conteúdo 100% gerenciável</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__flex d-flex" data-aos="fade-up" data-aos-duration="8000">
+                    <div class="services__flex__content d-flex align-items-center">
+                        <figure>
+                            <img class="icon" src="images/sites.png" alt="">
+                        </figure>
+                        <div class="d-block">
+                            <h3>Criação de Sites</h3>
+                            <span>Conteúdo 100% gerenciável</span>
+                        </div>
+                    </div>
+                    <div class="services__flex__content d-flex align-items-center">
+                        <figure>
+                            <img class="icon" src="images/sites.png" alt="">
+                        </figure>
+                        <div class="d-block">
+                            <h3>Criação de Sites</h3>
+                            <span>Conteúdo 100% gerenciável</span>
+                        </div>
+                    </div>
+                    <div class="services__flex__content d-flex align-items-center">
+                        <figure>
+                            <img class="icon" src="images/sites.png" alt="">
+                        </figure>
+                        <div class="d-block">
+                            <h3>Criação de Sites</h3>
+                            <span>Conteúdo 100% gerenciável</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="templates">
+            <div class="container">
+                <h2>Templates de sites</h2>
+                <div class="templates__content d-flex">
+                    <div class="templates__content__item" data-aos="zoom-out-down" data-aos-duration="800">
+                        <img src="images/templates.png" alt="" srcset="">
+                        <div class="background">
+                            <a href="#">
+                                Langing Pages   
+                            </a>
+                        </div>
+                    </div>
+                    <div class="templates__content__item" data-aos="zoom-out-down" data-aos-duration="1300">
+                        <img src="images/templates.png" alt="" srcset="">
+                        <div class="background">
+                            <a href="#">
+                                Langing Pages   
+                            </a>
+                        </div>
+                    </div>
+                    <div class="templates__content__item" data-aos="zoom-out-down" data-aos-duration="1800">
+                        <img src="images/templates.png" alt="" srcset="">
+                        <div class="background">
+                            <a href="#">
+                                Langing Pages   
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="plans">
+            <div class="container">
+                <h2>Planos & Preços</h2>
+                <div class="plans__content d-flex justify-content-between" data-aos="zoom-out-down" data-aos-duration="1800">
+                    <div class="plans__content__item">
+                        <h3>Landing Page</h3>
+                        <span>Perfeito para seu negócio</span>
+                        <h4 class="js-price">R$599,00</h4>
+                        <a href="#">Ver Plano</a>
+                        <ul class="leads-list">
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                        </ul>
+                        <h5 class="optional">Optional</h5>
+                        <ul class="leads-list">
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                        </ul>
+                    </div>
+                    <div class="plans__content__item">
+                        <h3>Landing Page</h3>
+                        <span>Perfeito para seu negócio</span>
+                        <h4 class="js-price">R$599,00</h4>
+                        <a href="#">Ver Plano</a>
+                        <ul class="leads-list">
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                        </ul>
+                        <h5 class="optional">Optional</h5>
+                        <ul class="leads-list">
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                        </ul>
+                    </div>
+                    <div class="plans__content__item">
+                        <h3>Landing Page</h3>
+                        <span>Perfeito para seu negócio</span>
+                        <h4 class="js-price">R$599,00</h4>
+                        <a href="#">Ver Plano</a>
+                        <ul class="leads-list">
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                        </ul>
+                        <h5 class="optional">Optional</h5>
+                        <ul class="leads-list">
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                        </ul>
+                    </div>
+                    <div class="plans__content__item">
+                        <h3>Landing Page</h3>
+                        <span>Perfeito para seu negócio</span>
+                        <h4 class="js-price">R$599,00</h4>
+                        <a href="#">Ver Plano</a>
+                        <ul class="leads-list">
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                        </ul>
+                        <h5 class="optional">Optional</h5>
+                        <ul class="leads-list">
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="frameworks/jquery/jquery-3.5.1.min.js"></script>
+    <script src="frameworks/slick/slick.js"></script>
+    <script src="frameworks/animeOnScroll/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>

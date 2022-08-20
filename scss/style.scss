@@ -1,8 +1,15 @@
-@import 'framework/bootstrap.scss';
-@import 'base/_reset';
-@import 'base/_variables';
-@import 'global/_header';
-@import 'global/_footer';
-@import 'sections/_services';
-@import 'sections/_partners';
-@import 'sections/_form'
+@import '../frameworks/slick/slick-theme';
+@import '../frameworks/slick/slick';
+
+@import 'components/fonts';
+@import 'components/variables';
+
+@import 'includes/button';
+
+@import 'global/reboot';
+@import 'global/header';
+
+@import 'pages/home';
+
+
+
