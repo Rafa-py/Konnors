@@ -1,13 +1,14 @@
-// Framework
-@import "framework/bootstrap.scss";
 
-// Base
-@import "base/reset";
-@import "base/variables";
+@import '../frameworks/slick/slick-theme';
+@import '../frameworks/slick/slick';
 
-// Global
-//@import "global/general";
+@import 'components/fonts';
+@import 'components/variables';
 
-// Sections
-@import "sections/header";
-@import "sections/banner";
+@import 'includes/button';
+
+@import 'global/reboot';
+@import 'global/header';
+
+@import 'pages/home';
+

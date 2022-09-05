@@ -1,59 +1,304 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- links-->
+
+        <!-- bootstrap-->
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+
+        <!-- jqueryui css-->
+        <link rel="stylesheet" href="frameworks/jquery/jquery-ui.min.css">
+
+        <!-- animeOnScroll-->
+        <link rel="stylesheet" href="frameworks/animeOnScroll/aos.css">
+
+        <!-- base css-->
         <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="shortcut icon" href="/img/Logo.png">
-        <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Racing+Sans+One&display=swap"
-            rel="stylesheet">
-        <title>Konnors</title>
-    </head>
-<body>
-    <header>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <!-- links end-->
+
+    <title>Konnors</title>
+</head>
+<body class="theme--pink">
+    <header class="header">
+        <div class="themeButton" style="display: none;"></div>
         <div class="container">
-            <div class="header">
-                <div class="logo">
-                    <h2 class="logo"><a href="index.html">Konnors</a></h2>
-                </div>
-                <div class="nav">
-                    <nav id="nav">
-                        <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-                            <span id="hamburger"></span>
-                        </button>
-                        <ul role="menu" class="menu" id="menu">
-                            <li><a href="">Serviços</a></li>
-                            <li><a href="">Templates</a></li>
-                            <li><a href="">Planos & Preços</a></li>
-                            <li><a href="">Contato</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div class="logo">
+                <h1 class="logo">Konnors</h1>
+            </div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__item__link">Serviços</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__item__link">Templates</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__item__link button">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobileButton">
+                <div class="mobileButton__item"></div>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="banner"> 
+        <section class="banner">
+            <figure class="banner__image" style="background-image:url(images/Banner.jpg)"></figure>
+            <figcaption class="banner__content">
+                <div class="container">
+                    <h2 class="banner__content__title">
+                        Tiramos a sua ideia do papel. <br>
+                        <span>Do design ao site no ar.</span>
+                    </h2>
+                    <a href="#" class="banner__content__button">Nossos Templates</a>
+                </div>
+            </figcaption>
+        </section>
+
+        <section class="technologys">
             <div class="container">
-                <div class="banner__content">
-                    <div class="banner__content__text">
-                        <h1>Tiramos a sua ideia do papel. Do design ao site no ar.</h1>
-                        <p>Do design ao site no ar.</p>
-                        <a href="#">NOSSOS TEMPLATES TESTE</a>
+                <h2 class="technologys__title">Tecnologias</h2>
+                <div class="technologys__slide slide" data-aos="fade-right" data-aos-duration="800">
+                    <div class="slide__item">
+                        <div class="slide__item__content">
+                            <h6>Estilização</h6>
+                            <figure class="slide__figure">
+                                <img class="slide__figure__image" src="images/logo-css-3-2048.png" alt="" srcset="">
+                            </figure>
+                            <h3>CSS</h3>
+                        </div>
                     </div>
-                    <div class="banner__content__img">
-                        <img src="img/pexels-picjumbocom-210661 1.jpg" alt="">
+                    <div class="slide__item">
+                        <div class="slide__item__content">
+                            <h6>Estrutura</h6>
+                            <figure class="slide__figure">
+                                <img class="slide__figure__image" src="images/html5-logo-8.png" alt="" srcset="">
+                            </figure>
+                            <h3>HTML</h3>
+                        </div>
+                    </div>
+                    <div class="slide__item">
+                        <div class="slide__item__content">
+                            <h6>Interatividade</h6>
+                            <figure class="slide__figure">
+                                <img class="slide__figure__image" src="images/logo-javascript-png-html-code-allows-to-embed-javascript-logo-in-your-website-587.png" alt="" srcset="">
+                            </figure>
+                            <h3>Javascript</h3>
+                        </div>
+                    </div>
+                    <div class="slide__item">
+                        <div class="slide__item__content">
+                            <h6>Gerenciamento de Conteúdo.</h6>
+                            <figure class="slide__figure">
+                                <img class="slide__figure__image" src="images/wordpress-logo.png" alt="" srcset="">
+                            </figure>
+                            <h3>Wordpress</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Serviços</h2>
+                <div class="services__flex d-flex" data-aos="fade-down" data-aos-duration="800">
+                    <div class="services__flex__content d-flex align-items-center">
+                        <figure class="d-flex align-items-center">
+                            <img class="icon" src="images/sites.png" alt="">
+                        </figure>
+                        <div class="d-block">
+                            <h3>Criação de Sites</h3>
+                            <span>Conteúdo 100% gerenciável</span>
+                        </div>
+                    </div>
+                    <div class="services__flex__content d-flex align-items-center">
+                        <figure>
+                            <img class="icon" src="images/sites.png" alt="">
+                        </figure>
+                        <div class="d-block">
+                            <h3>Criação de Sites</h3>
+                            <span>Conteúdo 100% gerenciável</span>
+                        </div>
+                    </div>
+                    <div class="services__flex__content d-flex align-items-center ">
+                        <figure>
+                            <img class="icon" src="images/sites.png" alt="">
+                        </figure>
+                        <div class="d-block">
+                            <h3>Criação de Sites</h3>
+                            <span>Conteúdo 100% gerenciável</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__flex d-flex" data-aos="fade-up" data-aos-duration="8000">
+                    <div class="services__flex__content d-flex align-items-center">
+                        <figure>
+                            <img class="icon" src="images/sites.png" alt="">
+                        </figure>
+                        <div class="d-block">
+                            <h3>Criação de Sites</h3>
+                            <span>Conteúdo 100% gerenciável</span>
+                        </div>
+                    </div>
+                    <div class="services__flex__content d-flex align-items-center">
+                        <figure>
+                            <img class="icon" src="images/sites.png" alt="">
+                        </figure>
+                        <div class="d-block">
+                            <h3>Criação de Sites</h3>
+                            <span>Conteúdo 100% gerenciável</span>
+                        </div>
+                    </div>
+                    <div class="services__flex__content d-flex align-items-center">
+                        <figure>
+                            <img class="icon" src="images/sites.png" alt="">
+                        </figure>
+                        <div class="d-block">
+                            <h3>Criação de Sites</h3>
+                            <span>Conteúdo 100% gerenciável</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="templates">
+            <div class="container">
+                <h2>Templates de sites</h2>
+                <div class="templates__content d-flex">
+                    <div class="templates__content__item" data-aos="zoom-out-down" data-aos-duration="800">
+                        <img src="images/templates.png" alt="" srcset="">
+                        <div class="background">
+                            <a href="#">
+                                Langing Pages   
+                            </a>
+                        </div>
+                    </div>
+                    <div class="templates__content__item" data-aos="zoom-out-down" data-aos-duration="1300">
+                        <img src="images/templates.png" alt="" srcset="">
+                        <div class="background">
+                            <a href="#">
+                                Langing Pages   
+                            </a>
+                        </div>
+                    </div>
+                    <div class="templates__content__item" data-aos="zoom-out-down" data-aos-duration="1800">
+                        <img src="images/templates.png" alt="" srcset="">
+                        <div class="background">
+                            <a href="#">
+                                Langing Pages   
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="plans">
+            <div class="container">
+                <h2>Planos & Preços</h2>
+                <div class="plans__content d-flex justify-content-between" data-aos="zoom-out-down" data-aos-duration="1800">
+                    <div class="plans__content__item">
+                        <h3>Landing Page</h3>
+                        <span>Perfeito para seu negócio</span>
+                        <h4 class="js-price">R$599,00</h4>
+                        <a href="#">Ver Plano</a>
+                        <ul class="leads-list">
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                        </ul>
+                        <h5 class="optional">Optional</h5>
+                        <ul class="leads-list">
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                        </ul>
+                    </div>
+                    <div class="plans__content__item">
+                        <h3>Landing Page</h3>
+                        <span>Perfeito para seu negócio</span>
+                        <h4 class="js-price">R$599,00</h4>
+                        <a href="#">Ver Plano</a>
+                        <ul class="leads-list">
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                        </ul>
+                        <h5 class="optional">Optional</h5>
+                        <ul class="leads-list">
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                        </ul>
+                    </div>
+                    <div class="plans__content__item">
+                        <h3>Landing Page</h3>
+                        <span>Perfeito para seu negócio</span>
+                        <h4 class="js-price">R$599,00</h4>
+                        <a href="#">Ver Plano</a>
+                        <ul class="leads-list">
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                        </ul>
+                        <h5 class="optional">Optional</h5>
+                        <ul class="leads-list">
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                        </ul>
+                    </div>
+                    <div class="plans__content__item">
+                        <h3>Landing Page</h3>
+                        <span>Perfeito para seu negócio</span>
+                        <h4 class="js-price">R$599,00</h4>
+                        <a href="#">Ver Plano</a>
+                        <ul class="leads-list">
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                        </ul>
+                        <h5 class="optional">Optional</h5>
+                        <ul class="leads-list">
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                            <li>Conversão em Leads</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <script src="js/menu.js"></script>
+    <script src="frameworks/jquery/jquery-3.5.1.min.js"></script>
+    <script src="frameworks/slick/slick.js"></script>
+    <script src="frameworks/animeOnScroll/aos.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>

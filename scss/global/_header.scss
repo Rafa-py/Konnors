@@ -1,0 +1,123 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    background: $baseGradient;
+    padding: 27px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .logo {
+        font-family: 'Racing Sans';
+        font-weight: $normal;
+        font-size: 38px;
+        color: $primaryColor;
+    }
+
+    .nav {
+        transition: .4s ease-in-out;
+        z-index: 999;
+
+        .menu {
+            display: flex;
+            
+            &__item {
+                + li {
+                    margin-left: 50px;
+                }
+
+                &__link {
+                    font-family: $fontFamily;
+                    font-size: 18px;
+                    color: $textColorWhite;
+
+                    &:hover {
+                        opacity: .5;
+                        transition: .3s
+                    }
+                }
+            }
+
+            @media (max-width: 900px) {
+                flex-direction: column;
+                align-items: center;
+
+                margin-top: 50px;
+
+                &__item {
+                    + li {
+                        margin-left: 0;
+                        margin-top: 50px;   
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 900px) {
+            background: #1B323C;
+            position: fixed;
+            left: 100%;
+            top: 121px;
+            height: 100%;
+            width: 100%;
+        }
+
+        &.mobile {
+            background: #1B323C;
+            position: fixed;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            transition: .4s ease-in-out;
+        }
+
+    }
+
+    .mobileButton {
+        display: none;
+        width: 40px;
+        height: 30px;
+        cursor: pointer;
+
+        &__item {
+            position: relative;
+            background: $primaryColor;
+            height: 2px;
+            width: 18.5px;
+
+            &::after, &::before {
+                content: '';
+                position: absolute;
+                top: 13px;
+                right: 0;
+                height: 2px;
+                width: 30px;
+                background: $primaryColor;
+            }
+
+            &::before {
+                top: unset;
+                bottom: 13px;
+            }
+        }
+
+        &:hover {
+            opacity: .5;
+            transition: .3s
+        }
+
+        @media (max-width: 900px) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

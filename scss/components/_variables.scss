@@ -1,0 +1,26 @@
+//base colors
+$primaryColor: #FFC035;
+
+
+//base gradient
+
+$baseGradient: linear-gradient(63.18deg, #0B1E26 0%, #1B323C 100%);
+$buttonGradient: linear-gradient(180deg, #FFC035 0%, #D29000 100%);
+//font
+
+$fontFamily: 'Poppins'; 
+$textColorWhite: #FFFFFF;
+$textColorBlue: #1B323C;
+$textColorBlueSub: #31505E;
+
+//Text Weights
+
+$light: 300;
+$normal: 400;
+$semi-bold:500;
+$bold:600;
+$extraBold: 800;
+
+//transition 
+
+$transition: .3s ease-in-out;
